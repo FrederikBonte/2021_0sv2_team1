@@ -1,5 +1,5 @@
 .checked {
-	color: yellow;
+	color: orange;
 }
 
 .fa-star {
@@ -16,6 +16,9 @@ body {
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 2px 2px 5px lightgray;
 }
 
 #header {
@@ -54,9 +57,22 @@ body {
 	padding: 20px;
 }
 
+#nav li {
+	display: inline-table;
+	background: #ccd;
+	padding: 5px;
+	width: 300px;
+	font-size: 130%;
+}
+
 #nav li:hover {
+	box-shadow: 2px 2px 5px black;
+	transition: 0.5s;
+}
+
+#nav li:hover a {
 	color: gray;
-	font-weight: bolder;
+	font-weight: bold;
 }
 
 ul {
@@ -64,9 +80,34 @@ ul {
 	font-weight: bolder;
 	padding-top: 3px;
 	padding-bottom: 3px;
+	list-style: square;
+}
+
+ul#color {
+	list-style: circle;
+	background-color: #d8d3d3;
+}
+
+ul.other {
+	background-color: green;
+}
+
+ul.color {
+	background-color: hotpink;	
 }
 
 .cinfo {
 	background-color: #d3d3d8;
 	padding: 5px;
+}
+
+.code {
+	font-family: "Courier new", serif;
+	background-color: #d3d3d8;
+	box-shadow: 2px 2px 5px gray;
+}
+
+pre.code {
+	padding: 5px;
+	box-shadow: 2px 2px 5px black;
 }
